@@ -1,0 +1,106 @@
+{
+  "shoes": [
+    {
+      "id": 1,
+      "title": "Heels",
+      "price": 140,
+      "img_url": "/images/heels.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Black Shoes",
+      "price": 99,
+      "img_url": "/images/black-shoes.jpg"
+    },
+    {
+      "id": 3,
+      "title": "White Shoes",
+      "price": 120,
+      "img_url": "/images/white-shoes.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Boots",
+      "price": 199,
+      "img_url": "/images/boots.jpg"
+    }
+  ],
+  "shirts": [
+    {
+      "id": 1,
+      "title": "White T-Shirt",
+      "price": 49,
+      "img_url": "/images/white-tshirt.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Black T-Shirt",
+      "price": 49,
+      "img_url": "/images/black-tshirt.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Long-Sleeve",
+      "price": 80,
+      "img_url": "/images/long-sleeve.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Hoodie",
+      "price": 200,
+      "img_url": "/images/hoodie.jpg"
+    }
+  ],
+  "pants": [
+    {
+      "id": 1,
+      "title": "Light Jeans",
+      "price": 99,
+      "img_url": "/images/light-jeans.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Dark Jeans",
+      "price": 99,
+      "img_url": "/images/dark-jeans.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Formal",
+      "price": 120,
+      "img_url": "/images/formal.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Casual",
+      "price": 89,
+      "img_url": "/images/casual.jpg"
+    }
+  ],
+  "hats": [
+    {
+      "id": 1,
+      "title": "Fedora",
+      "price": 79,
+      "img_url": "/images/fedora.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Flat Cap",
+      "price": 69,
+      "img_url": "/images/flat.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Cowboy",
+      "price": 99,
+      "img_url": "/images/cowboy.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Floppy",
+      "price": 109,
+      "img_url": "/images/floppy.jpg"
+    }
+  ]
+}

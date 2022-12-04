@@ -1,15 +1,17 @@
 import { Context } from './data/Context'
 import Home from './pages/Home'
 import About from './pages/About'
-import products from './data/products.json'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './components/Navbar';
 import { Container } from 'react-bootstrap';
 import { Route, Routes } from 'react-router-dom';
+import { useState } from 'react';
 
 function App() {
+  const [ cart, setCart ] = useState([])
+
   return (
-    <Context.Provider value={products}>
+    <Context.Provider value={{ cart: [cart, setCart] }}>
       <Navbar />
       <Container>
         <Routes>

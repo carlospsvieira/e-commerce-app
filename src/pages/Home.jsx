@@ -4,7 +4,7 @@ import Shoes from '../components/ProductsCategory/Shoes'
 
 export default function Home() {
   return (
-    <Container>
+    <Container className='mt-5'>
       <Shoes />
     </Container>
   )

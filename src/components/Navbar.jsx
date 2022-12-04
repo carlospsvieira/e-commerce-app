@@ -1,6 +1,7 @@
 import React from 'react'
 import { Navbar as NavBoot, Container, Nav } from 'react-bootstrap'
 import { NavLink } from 'react-router-dom'
+import Cart from '../pages/Cart'
 
 export default function Navbar() {
   return (
@@ -11,6 +12,7 @@ export default function Navbar() {
           <Nav.Link to='/about' as={NavLink}>About Me</Nav.Link>
         </Nav>
       </Container>
+      <Cart />
     </NavBoot>
   )
 }

@@ -1,21 +1,31 @@
-import React, { useState } from 'react'
-import { useContext } from 'react';
+import React, { useContext, useState } from 'react'
+import products from '../../data/products.json'
 import { Button, Card, CardImg, Collapse, Row } from 'react-bootstrap';
 import { Context } from '../../data/Context';
 
 export default function Shoes() {
+  const { shoes } = products
   const [open, setOpen] = useState(false);
-  const products = useContext(Context)
-  const { shoes } = products;
+  const [validation, setValidation] = useState(false)
+  const [btnText, setBtnText ] = useState('Add To Cart')
+  const { cart } = useContext(Context)
+  const [cartList, setCartList] = cart
+
+  const getItem = (id) => {
+    const item = shoes.find((shoe) => shoe.id === id)
+    setCartList([...cartList, item])
+  }
 
   return (
     <>
       <Button
         onClick={() => setOpen(!open)}
-        aria-controls="example-collapse-text"
         aria-expanded={open}
+        className='w-100'
+        variant='light'
+        style={{ border: '1px solid lightgrey' }}
       >
-        Shoes
+        Shoes | 👟
       </Button>
       <Collapse in={open}>
         <Row>
@@ -34,6 +44,13 @@ export default function Shoes() {
                   <span>{title}</span>
                   <span className='text-muted'>{`$${price}`}</span>
                 </Card.Title>
+                <Button
+                  className='w-100'
+                  onClick={() => getItem(id)}
+                  disabled={ validation }
+                >
+                  {btnText}
+                </Button>
               </Card.Body>
             </Card>
           )) }

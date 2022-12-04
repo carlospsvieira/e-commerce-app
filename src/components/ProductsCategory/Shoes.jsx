@@ -6,22 +6,22 @@ import { Context } from '../../data/Context';
 export default function Shoes() {
   const { shoes } = products
   const [open, setOpen] = useState(false);
-  const [validation, setValidation] = useState(false)
-  const [btnText, setBtnText ] = useState('Add To Cart')
   const { cart } = useContext(Context)
   const [cartList, setCartList] = cart
 
-  const getItem = (id) => {
-    const item = shoes.find((shoe) => shoe.id === id)
+  const getItem = ({ target }) => {
+    const { id } = target;
+    const item = shoes.find((product) => product.id === id)
     setCartList([...cartList, item])
   }
+
 
   return (
     <>
       <Button
         onClick={() => setOpen(!open)}
         aria-expanded={open}
-        className='w-100'
+        className='w-100 mb-3'
         variant='light'
         style={{ border: '1px solid lightgrey' }}
       >
@@ -29,15 +29,15 @@ export default function Shoes() {
       </Button>
       <Collapse in={open}>
         <Row>
-          { shoes.map(({ title, id, img_url, price}) => (
-            <Card key={id}>
+          {shoes.map(({ title, id, img_url, price }) => (
+            <Card key={id} className='mb-3'>
               <CardImg src={img_url} alt={title}
                 variant='top'
                 height='300px'
                 style={{ objectFit: 'cover' }}
               />
               <Card.Body>
-              <Card.Title
+                <Card.Title
                   className='d-flex
                   justify-content-between
                   align-items-baseline'>
@@ -46,14 +46,14 @@ export default function Shoes() {
                 </Card.Title>
                 <Button
                   className='w-100'
-                  onClick={() => getItem(id)}
-                  disabled={ validation }
+                  id={id}
+                  onClick={ getItem }
                 >
-                  {btnText}
+                  Add To Cart
                 </Button>
               </Card.Body>
             </Card>
-          )) }
+          ))}
         </Row>
       </Collapse>
     </>

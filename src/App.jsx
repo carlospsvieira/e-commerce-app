@@ -8,10 +8,11 @@ import { Route, Routes } from 'react-router-dom';
 import { useState } from 'react';
 
 function App() {
-  const [ cart, setCart ] = useState([])
+  const [cart, setCart] = useState([])
 
   return (
-    <Context.Provider value={{ cart: [cart, setCart] }}>
+    <Context.Provider value={{ cart: [cart, setCart] }}
+    >
       <Navbar />
       <Container>
         <Routes>

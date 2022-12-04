@@ -8,11 +8,23 @@ export default function Shoes() {
   const [open, setOpen] = useState(false);
   const { cart } = useContext(Context)
   const [cartList, setCartList] = cart
+  console.log("🚀 ~ file: Shoes.jsx:11 ~ Shoes ~ cartList", cartList)
 
   const getItem = ({ target }) => {
     const { id } = target;
     const item = shoes.find((product) => product.id === id)
-    setCartList([...cartList, item])
+    const duplicate = cartList.some((product) => product.id === id)
+    
+    // add item to cart and count duplicates adding quantity //
+    if (!duplicate) {
+      item.quantity = 1;
+      setCartList([...cartList, item])
+
+    } else {
+      item.quantity += 1;
+      const newList = cartList.filter((product) => product.id !== item.id)
+      setCartList([...newList, item])
+    }
   }
 
 

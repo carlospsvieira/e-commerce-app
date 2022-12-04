@@ -12,6 +12,10 @@ export default function Cart() {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
+  // sum number of items in total quantity //
+  const itemsQuantity = cartList.map(({ quantity }) => quantity)
+  const iconSum = itemsQuantity.reduce((partialSum, a) => partialSum + a, 0)
+
   return (
     <>
       <Button
@@ -25,17 +29,17 @@ export default function Cart() {
           className='rounded-circle bg-primary d-flex
           justify-content-center align-items-center'
           style={{
-            fontSize: '15px',
+            fontSize: '12px',
             color: 'white',
-            width: '1.5rem',
-            height: '1.5rem',
+            width: '1.3rem',
+            height: '1.3rem',
             position: 'absolute',
             bottom: 0,
             right: 0,
             transform: 'translate(25%, 25%)'
           }}
         >
-          {cartList.length}
+          {iconSum}
         </div>
       </Button>
       <Offcanvas show={show} onHide={handleClose} placement='end'>

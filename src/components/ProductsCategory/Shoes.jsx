@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { useContext } from 'react';
 import { Button, Card, CardImg, Collapse, Row } from 'react-bootstrap';
-import { Context } from '../data/Context';
+import { Context } from '../../data/Context';
 
 export default function Shoes() {
   const [open, setOpen] = useState(false);

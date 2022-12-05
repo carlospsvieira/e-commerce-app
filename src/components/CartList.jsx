@@ -1,6 +1,7 @@
 import React, { useContext } from 'react'
 import { Button, Container, Stack } from 'react-bootstrap'
 import { Context } from '../data/Context'
+import Checkout from '../pages/Checkout'
 
 export default function CartList() {
   const { cart } = useContext(Context)
@@ -81,10 +82,11 @@ export default function CartList() {
         {cartList.length === 0 ? '🗑 Your cart is empty' : (
           <div className='d-flex justify-content-end'>
             <span style={{ marginRight: '0.5rem' }}>Total: </span>
-            <span className='text-muted'>{totalPrice}</span>
+            <span className='text-muted'>{`$${totalPrice}`}</span>
           </div>
         )}
       </Stack>
+      <Checkout />
     </Container>
   )
 }

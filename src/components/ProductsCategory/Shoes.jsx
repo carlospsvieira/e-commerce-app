@@ -31,7 +31,6 @@ export default function Shoes() {
     <>
       <Button
         onClick={() => setOpen(!open)}
-        aria-expanded={open}
         className='w-100 mb-3'
         variant='light'
         style={{ border: '1px solid lightgrey' }}

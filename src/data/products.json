@@ -4,25 +4,25 @@
       "id": "SHOES1",
       "title": "Heels",
       "price": 140,
-      "img_url": "images/heels.jpg"
+      "img_url": "/images/heels.jpg"
     },
     {
       "id": "SHOES2",
       "title": "Black Shoes",
       "price": 99,
-      "img_url": "images/black-shoes.jpg"
+      "img_url": "/images/black-shoes.jpg"
     },
     {
       "id": "SHOES3",
       "title": "White Shoes",
       "price": 120,
-      "img_url": "images/white-shoes.jpg"
+      "img_url": "/images/white-shoes.jpg"
     },
     {
       "id": "SHOES4",
       "title": "Boots",
       "price": 199,
-      "img_url": "images/boots.jpg"
+      "img_url": "/images/boots.jpg"
     }
   ],
   "shirts": [
@@ -30,25 +30,25 @@
       "id": "SHIRTS1",
       "title": "White T-Shirt",
       "price": 49,
-      "img_url": "images/white-tshirt.jpg"
+      "img_url": "/images/white-tshirt.jpg"
     },
     {
       "id": "SHIRTS2",
       "title": "Black T-Shirt",
       "price": 49,
-      "img_url": "images/black-tshirt.jpg"
+      "img_url": "/images/black-tshirt.jpg"
     },
     {
       "id": "SHIRTS3",
       "title": "Long-Sleeve",
       "price": 80,
-      "img_url": "images/long-sleeve.jpg"
+      "img_url": "/images/long-sleeve.jpg"
     },
     {
       "id": "SHIRTS4",
       "title": "Hoodie",
       "price": 200,
-      "img_url": "images/hoodie.jpg"
+      "img_url": "/images/hoodie.jpg"
     }
   ],
   "pants": [
@@ -56,25 +56,25 @@
       "id": "PANTS1",
       "title": "Light Jeans",
       "price": 99,
-      "img_url": "images/light-jeans.jpg"
+      "img_url": "/images/light-jeans.jpg"
     },
     {
       "id": "PANTS2",
       "title": "Dark Jeans",
       "price": 99,
-      "img_url": "images/dark-jeans.jpg"
+      "img_url": "/images/dark-jeans.jpg"
     },
     {
       "id": "PANTS3",
       "title": "Formal",
       "price": 120,
-      "img_url": "images/formal.jpg"
+      "img_url": "/images/formal.jpg"
     },
     {
       "id": "PANTS4",
       "title": "Casual",
       "price": 89,
-      "img_url": "images/casual.jpg"
+      "img_url": "/images/casual.jpg"
     }
   ],
   "hats": [
@@ -82,25 +82,25 @@
       "id": "HATS1",
       "title": "Fedora",
       "price": 79,
-      "img_url": "images/fedora.jpg"
+      "img_url": "/images/fedora.jpg"
     },
     {
       "id": "HATS2",
       "title": "Flat Cap",
       "price": 69,
-      "img_url": "images/flat.jpg"
+      "img_url": "/images/flat.jpg"
     },
     {
       "id": "HATS3",
       "title": "Cowboy",
       "price": 99,
-      "img_url": "images/cowboy.jpg"
+      "img_url": "/images/cowboy.jpg"
     },
     {
       "id": "HATS4",
       "title": "Floppy",
       "price": 109,
-      "img_url": "images/floppy.jpg"
+      "img_url": "/images/floppy.jpg"
     }
   ]
 }

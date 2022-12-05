@@ -17,4 +17,4 @@ I also applied react-bootstrap to speed up the styling process, and managed stat
 - Display items in different categories
 - Add, remove, add quantity and calculate cart total price
 
-#### Check out this project here: https://carlospsvieira.github.io/thousandtunes/#/
+#### Check out this project here: https://carlospsvieira.github.io/e-commerce-app/#/

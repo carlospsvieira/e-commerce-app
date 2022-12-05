@@ -7,7 +7,7 @@ import Shoes from '../components/ProductsCategory/Shoes'
 
 export default function Home() {
   return (
-    <Container className='mt-5'>
+    <Container className='mt-5' style={{ maxWidth: '500px'}}>
       <Shoes />
       <Shirts />
       <Pants />

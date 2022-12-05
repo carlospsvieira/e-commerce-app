@@ -1,4 +1,5 @@
 import { Context } from './data/Context'
+import './App.css'
 import Home from './pages/Home'
 import About from './pages/About'
 import 'bootstrap/dist/css/bootstrap.min.css';

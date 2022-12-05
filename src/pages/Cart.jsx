@@ -12,7 +12,7 @@ export default function Cart() {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
-  // sum number of items in total quantity //
+  // sum number of items //
   const itemsQuantity = cartList.map(({ quantity }) => quantity)
   const iconSum = itemsQuantity.reduce((partialSum, a) => partialSum + a, 0)
 

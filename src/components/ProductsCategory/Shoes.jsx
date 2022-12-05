@@ -8,7 +8,6 @@ export default function Shoes() {
   const [open, setOpen] = useState(false);
   const { cart } = useContext(Context)
   const [cartList, setCartList] = cart
-  console.log("🚀 ~ file: Shoes.jsx:11 ~ Shoes ~ cartList", cartList)
 
   const getItem = ({ target }) => {
     const { id } = target;

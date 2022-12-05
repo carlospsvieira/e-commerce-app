@@ -2,7 +2,6 @@ import React, { useContext } from 'react'
 import { Button, Container, Stack } from 'react-bootstrap'
 import { Context } from '../data/Context'
 import Checkout from '../pages/Checkout'
-import products from '../data/products.json'
 
 export default function CartList() {
   const { cart } = useContext(Context)

@@ -2,18 +2,17 @@ import React, { useContext } from 'react'
 import { Button, Container, Stack } from 'react-bootstrap'
 import { Context } from '../data/Context'
 import Checkout from '../pages/Checkout'
+import products from '../data/products.json'
 
 export default function CartList() {
   const { cart } = useContext(Context)
   const [cartList, setCartList] = cart
 
   // calculate cart items //
-  const itemsPrice = cartList.map(({ price }) => price)
-  const totalPrice = itemsPrice.reduce((partialSum, a) => partialSum + a, 0)
 
   // remove items from the cart //
-  const removeItem = ({ target }) => {
-    const { id } = target;
+  function removeItem({ target }) {
+    const { id } = target
     const wanted = cartList.filter((product) => product.id !== id)
     setCartList(wanted)
   }
@@ -82,7 +81,10 @@ export default function CartList() {
         {cartList.length === 0 ? '🗑 Your cart is empty' : (
           <div className='d-flex justify-content-end'>
             <span style={{ marginRight: '0.5rem' }}>Total: </span>
-            <span className='text-muted'>{`$${totalPrice}`}</span>
+            <span className='text-muted'>{`$${cartList.reduce((total, cartItem) => {
+              const item = cartList.find((product) => product.id === cartItem.id)
+              return total + (item?.price || 0) * cartItem.quantity
+            }, 0)}`}</span>
           </div>
         )}
       </Stack>
